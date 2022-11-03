@@ -1,0 +1,19 @@
+{
+  "message": [
+    {
+      "name": "Bulbasaur",
+      "qty": 1,
+      "id": 3
+    },
+    {
+      "name": "Charmander",
+      "qty": "2",
+      "id": 8
+    },
+    {
+      "name": "Squirtle",
+      "qty": 15,
+      "id": 10
+    }
+  ]
+}

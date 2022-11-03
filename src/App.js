@@ -1,18 +1,21 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Notes from './pages/Notes'
-import Create from './pages/Create'
+import Product from './pages/Product'
+import Detail from './pages/Detail'
+import Layout from './components/Layout';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Notes />
-        </Route>
-        <Route path="/create">
-          <Create />
-        </Route>
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route exact path="/">
+            <Product />
+          </Route>
+          <Route path="/detail/:id?">
+            <Detail />
+          </Route>
+        </Switch>
+      </Layout>
     </Router>
   );
 }
